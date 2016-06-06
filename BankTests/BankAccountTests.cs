@@ -7,6 +7,7 @@ namespace BankTests
     [TestClass]
     public class BankAccountTests
     {
+        #region Debit Tests
         [TestMethod]
         public void Debit_WithValidAmount_UpdatesBalance()
         {
@@ -67,5 +68,8 @@ namespace BankTests
             }
             Assert.Fail("No exception was thrown");
         }
+        #endregion
+
+
     }
 }
